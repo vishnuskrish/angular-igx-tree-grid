@@ -1,0 +1,10 @@
+<div class="grid__wrapper">
+    <igx-tree-grid #treeGrid [data]="data" rowSelection="multiple" cellSelection="none" primaryKey="ID"
+        foreignKey="ParentID" height="830px" width="100%" [autoGenerate]="false"  (onRowSelectionChange)="onRowClickChange($event)">
+        <igx-column field="Name"></igx-column>
+        <igx-column field="Title"></igx-column>
+        <igx-column field="HireDate"></igx-column>
+        <igx-column field="Age" width="15%"></igx-column>
+        <igx-column field="OnPTO" width="15%"></igx-column>
+    </igx-tree-grid>
+</div>
